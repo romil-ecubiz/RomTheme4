@@ -1,0 +1,138 @@
+@import "variables";
+@import "main";
+@import "footer";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+//header section
+header{
+    background-color: $primary-color;
+    padding: .7rem 0rem;
+    width: 100vw;
+    z-index: 9999;
+    opacity: .9;
+    position: fixed;
+    top: 0;
+
+    .navbar-branding{
+        color: #fff;
+    }
+
+    nav{
+        display: flex;
+
+        .nav-link{
+            color: #fff;
+            margin: 0rem .5rem;
+
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+
+        .get-started{
+            padding: .5rem;
+            color: white;
+            border-radius: 20px;
+            border: 1px solid $secondary-color;
+
+            &:hover{
+                background-color: $secondary-color;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//hero section
+#hero{
+    background-color: $primary-color;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    .row{
+        h1{
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff;
+        }
+        h2{
+            font-size: 24px;
+            color: #fff;
+            opacity: .5;
+            margin-bottom: 50px;
+        }
+        .learn-enough{
+            color: #fff;
+            padding: .5rem;
+            text-decoration: none;
+            background-color: $secondary-color;
+            border-radius: 20px;
+
+            &:hover{
+                background-color: #54d4f7;
+            }
+        }
+        .learn-more{
+            color: #fff;
+            text-decoration: none;
+            svg{
+                fill: #fff;
+            }
+
+            &:hover{
+                svg{
+                    fill: $secondary-color;
+                }
+            }
+        }
+        .hero-img{
+            img{
+                /*
+                transition: all .2s cubic-bezier(.97,.13,.03,.72);
+                animation-name: up-down;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                animation-delay: 1s;
+                */
+                animation: up-down 2s ease-in-out infinite alternate-reverse both;
+            }
+        }
+ 
+    }
+}
+
+//back to top button
+.back-to-top{
+    background-color: #54d4f7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    svg{
+        fill: #fff;
+        stroke: #fff;
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+}
+
+
+//animation for image
+@keyframes up-down {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}

@@ -1,0 +1,101 @@
+#footer-news{
+    background-color: $section-bg;
+    padding: 4rem 0rem;
+
+    h4{
+        color: $primary-color;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    p{
+        font-size: 16px;
+        opacity: .8;
+        padding: .9rem 0rem;
+        margin-left: 1.5rem;
+    }
+    .blank-input{
+        width: 70%;
+        background-color: #fff;
+        border-radius: 25px;
+        padding: .5rem .5rem;
+        border: none;
+    }
+    .subscribe-input{
+        width: 30%;
+        background-color: $secondary-color;
+        color: #fff;
+        padding: .5rem .5rem;
+        border: none;
+        border-radius: 25px;
+        margin-left: -2rem;
+    }
+}
+
+
+//main footer
+#footer-top{
+    padding: 4rem 0rem;
+    h3{
+        color: $primary-color;
+        font-weight: 600;
+    }
+    .address{
+        font-size: 14px;
+        opacity: .7;
+    }
+    h5{
+        font-size: 14px;
+        .mail-link{
+            color: $secondary-color;
+        }
+    }
+
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+        color: $primary-color;
+        margin-bottom: 1rem;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            font-size: 14px;
+            opacity: .9;
+            margin: 1rem 0rem;
+            position: relative;
+            margin-left: -10px;
+
+            svg{
+                fill: $secondary-color;
+                position: absolute;
+                left: -20px;
+                bottom: 2px;
+            }
+        }
+    }
+    .social-address{
+        font-size: 14px;
+        opacity: .8;
+    }
+
+    .social-links{
+        a{
+            background-color: $secondary-color;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0rem .5rem;
+            display: inline-block;
+            position: relative;
+
+            svg{
+                fill: #fff;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+
+}
